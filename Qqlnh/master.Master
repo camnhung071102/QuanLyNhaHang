@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="QLNH.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 20%;
+            height: 26px;
+        }
+    </style>
+</head>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" style="text-align :center"><H1>NHÀ HÀNG HẢI SẢN</H1></td>
+                <td style="text-align :center">&nbsp;
+<body>
+    <form id="form1" runat="server"></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Gioithieu.aspx">Giới thiệu</asp:HyperLink>
+                </td>
+                <td rowspan="6" style="vertical-align: top">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+                <td rowspan="6" style="vertical-align: top; width: 10%;">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td style="5; " class="auto-style2">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/datbanTTKH.aspx">Đặt bàn</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/dangnhap.aspx">Đăng nhập</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

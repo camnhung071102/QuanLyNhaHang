@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="QLNH.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" style="text-align :center"><H1>NHÀ HÀNG HẢI SẢN</H1></td>
+                <td style="text-align :center">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="text-align :center" class="auto-style1"></td>
+                <td style="text-align :left" class="auto-style1">&nbsp;
+                     
+                </td>
+                <td style="text-align :center" class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td>damin</td>
+                <td rowspan="8" style="vertical-align: top; width: 70%;">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+                <td rowspan="8" style="width: 10%;">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td style="5; width: 20%;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/QLthucdon.aspx">Quản lí thực đơn</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="admin" >
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/QLnhanvien.aspx">Quản lí nhân viên</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/QLBan.aspx">Quản lí bàn</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Thanhtoan.aspx">Thanh toán</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ThongKe.aspx">Thống kê</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                 <asp:Button ID="btnLogout" runat="server" Text="Đăng xuất" OnClientClick="return confirm('Bạn có chắc chắn muốn đăng xuất không?')" OnClick="btnLogout_Click"/>
+
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </form>
+   
+</body>
+</html>

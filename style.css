@@ -1,0 +1,104 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+/*-----------master-----------*/
+* {
+    font-size: 20px;
+}
+.my-link {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+}
+ h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+    .nav-link:hover {
+        color: #fff;
+        background-color: #333;
+    }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.5s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+.content-wrapper {
+    margin: 0 auto;
+    padding: 40px;
+}
+/*-----------End master-----------*/
+/*-----------Giới thiệu-----------*/
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+table {
+    font-family: 'Playfair Display', serif;
+}
+td, th {
+
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+/*-----------------đạt bàn-------------*/
